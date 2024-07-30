@@ -1,0 +1,38 @@
+body {
+    background-color: cyan;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+li {
+    color: purple;
+    font-size:25px;
+}
+
+
+p {
+    color: aquamarine;
+}
+
+th {
+    width: 33%;
+}
+td {
+    border: solid;
+    border-width: 3px;
+    background-color: lightcoral;
+    
+}
+img {
+    width: 100%;
+}
+h1{
+    background-color:yellow;
+}
+
+th{
+    background-color: brown;
+}
+
+td{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
