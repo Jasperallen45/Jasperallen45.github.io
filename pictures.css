@@ -1,3 +1,10 @@
+@keyframes stretch {
+    0% { transform: scale(1, 1); }
+    25% { transform: scale(2, 1); }
+    50% { transform: scale(1, 1); }
+    75% { transform: scale(1, 2); }
+    100% { transform: scale(1, 1); }
+}
 body {
     background-color: cyan;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -7,7 +14,10 @@ li {
     color: purple;
     font-size:25px;
 }
-
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
 
 p {
     color: aquamarine;
@@ -35,4 +45,26 @@ th{
 
 td{
     font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.title {
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px 2px red;
+}
+
+.Subtitle{
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px 1px purple;
+}
+div {
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+button{
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px 2px yellowgreen;
 }
