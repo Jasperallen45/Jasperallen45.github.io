@@ -5,8 +5,47 @@
     75% { transform: scale(1, 2); }
     100% { transform: scale(1, 1); }
 }
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(
+        var(--bounce-offset)
+      );
+    }
+  }
+hi {
+    background-image: url("paper.gif");
+}
+hi2 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Javier_B%C3%A1ez_%2835908854566%29.jpg/640px-Javier_B%C3%A1ez_%2835908854566%29.jpg");
+}
+hi3 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZVA5T-mpVdsYcyeM9y4WOtjAKtAHqGkkjSQ&s");
+}
+hi4 {
+    background-image: url("paper.gif");
+}
+  .box {
+    animation:
+      bounce alternate infinite
+      cubic-bezier(.2, .65, .6, 1);
+  }
+  .box.one {
+    --bounce-offset: -20px;
+    animation-duration: 200ms;
+  }
+  .box.two {
+    --bounce-offset: -30px;
+    animation-duration: 300ms;
+  }
+  .box.three {
+    --bounce-offset: -40px;
+    animation-duration: 400ms;
+  }
 body {
-    background-color: cyan;
+    background-color: #6DD6DA;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -15,8 +54,13 @@ li {
     font-size:25px;
 }
 body.dark-mode {
-    background-color: #333;
+    background-color: #171738;
     color: #fff;
+}
+a {
+    background-color: #DD1C1A;
+    color: white;
+    padding:5px;
 }
 
 p {
@@ -34,13 +78,19 @@ td {
 }
 img {
     width: 100%;
+        object-fit: contain;
 }
-h1{
-    background-color:yellow;
+header{
+    background-color:#F0C808;
+    padding: 5px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 1px purple;
+    text-align: center;
 }
 
 th{
-    background-color: brown;
+    background-color: #086788;
+    color: 465775;
 }
 
 td{
@@ -50,12 +100,19 @@ td{
     font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-shadow: 1px 1px 2px red;
+    text-align: center;
 }
-
+.title {
+    background-color: green;
+}
 .Subtitle{
     font-size: 15px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 1px 1px 1px purple;
+    text-align: center;
+}
+.Subtitle{
+    background-color: yellow;
 }
 div {
     display:flex;
@@ -68,3 +125,17 @@ button{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 1px 1px 2px yellowgreen;
 }
+.Paragraph{
+    font-size: 14px;
+    color:whitesmoke;
+    padding-left: 10px;
+    background-color:darkblue;
+}
+h1{
+    color: white;
+    text-shadow: 2px 2px 2px purple;
+}
+  h3{
+    color: black;
+    text-shadow: 2px 2px 2px white;
+  }

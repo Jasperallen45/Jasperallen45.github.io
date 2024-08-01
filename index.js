@@ -7,9 +7,9 @@ let result = document.getElementById("GFG");
         }
  
         function myFunc() {
-            changeColor('aqua');
+            changeColor('#6DD6DA');
         }
 
         function myFunc2() {
-            changeColor('black');
+            changeColor('#171738');
         }
