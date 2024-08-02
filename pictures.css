@@ -1,10 +1,19 @@
-@keyframes stretch {
-    0% { transform: scale(1, 1); }
-    25% { transform: scale(2, 1); }
-    50% { transform: scale(1, 1); }
-    75% { transform: scale(1, 2); }
-    100% { transform: scale(1, 1); }
+@keyframes colors {
+    0% { color: rgb(223, 35, 35); }
+    25% { color: rgb(217, 217, 57); }
+    50% { color: rgb(44, 202, 44); }
+    75% { color: rgb(35, 103, 227); }
+    100% { color: rgb(215, 34, 215); }
 }
+
+@keyframes colors2 {
+    0% { background-color: rgb(35, 82, 223); }
+    25% { background-color: rgb(57, 198, 217); }
+    50% { background-color: rgb(24, 77, 174); }
+    75% { background-color: rgb(111, 155, 237); }
+    100% { background-color: rgb(34, 161, 215); }
+}
+
 @keyframes bounce {
     from {
       transform: translateY(0px);
@@ -15,6 +24,49 @@
       );
     }
   }
+
+  @keyframes stretch {
+    0% { transform: scale(1, 1); }
+    25% { transform: scale(2, 1); }
+    50% { transform: scale(1, 1); }
+    75% { transform: scale(1, 2); }
+    100% { transform: scale(1, 1); }
+}
+
+@keyframes spin {
+    0% { rotate: 0%;}
+    25% { rotate: 90%; }
+    50% { rotate: 180%; }
+    75% { rotate: 270%; }
+    100% { rotate: 360%; }
+}
+
+  @keyframes grow-and-shrink {
+    0% {
+      transform: scale(1.2);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+
+
+  @keyframes drop-in {
+    from {
+      transform:
+        rotate(-30deg) translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform:
+        rotate(0deg) translateY(0%);
+      opacity: 1;
+    }
+  }
+
 hi {
     background-image: url("paper.gif");
 }
@@ -26,6 +78,11 @@ hi3 {
 }
 hi4 {
     background-image: url("paper.gif");
+}
+.great {
+    animation: grow-and-shrink 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
   .box {
     animation:
@@ -79,6 +136,10 @@ td {
 img {
     width: 100%;
         object-fit: contain;
+
+    border-style: ridge;
+    border-width: 10px;
+    border-color: #6DD6DA;
 }
 header{
     background-color:#F0C808;
@@ -86,6 +147,7 @@ header{
     margin-bottom: 15px;
     text-shadow: 1px 1px 1px purple;
     text-align: center;
+    animation: drop-in 2000ms;
 }
 
 th{
@@ -101,8 +163,6 @@ td{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-shadow: 1px 1px 2px red;
     text-align: center;
-}
-.title {
     background-color: green;
 }
 .Subtitle{
@@ -110,8 +170,6 @@ td{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 1px 1px 1px purple;
     text-align: center;
-}
-.Subtitle{
     background-color: yellow;
 }
 div {
@@ -124,18 +182,52 @@ button{
     font-size: 15px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 1px 1px 2px yellowgreen;
+    animation: spin 4000ms;
+    animation-iteration-count: infinite;
 }
 .Paragraph{
     font-size: 14px;
-    color:whitesmoke;
+    animation: colors 4000ms;
+    animation-iteration-count: infinite;
+    
     padding-left: 10px;
     background-color:darkblue;
 }
 h1{
-    color: white;
+    animation: colors 1000ms;
+    animation-iteration-count: infinite;
     text-shadow: 2px 2px 2px purple;
 }
   h3{
     color: black;
     text-shadow: 2px 2px 2px white;
+  }
+
+
+
+
+
+  /* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
   }
